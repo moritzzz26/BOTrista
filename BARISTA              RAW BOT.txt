@@ -1,0 +1,68 @@
+# Let's build Robot Barista + Robot Bouncer !!
+
+# Greetings
+print("Hello, welcome to TeoCoffeeShop!!!!!!!!!!!!!!! ")
+
+name = input("What is your name?\n")
+
+#if statement
+#EVIL are not allowed here!
+
+if name == "AMBER" or name == "amber" or name == "JHON" or name == "jhon" or name == "MAGDALENE" or name == "magdalene":
+    evil_status = input("Are you evil?\n")
+  
+    if evil_status == "NO" or "No" or "no":
+        print("Are you sure that you're not the bad " + name + " out there? Please prove to me!")
+        
+
+
+    good_deeds = input("How many good things have you done today?\n")
+    if int(good_deeds) < 3:
+        print("you can't come in, you motherfcker " + name)
+        exit()
+    else:
+        print("Oh, so you are not that bad"+" " + name +" " + "out there.\n\n")
+
+    if int(good_deeds) < 3:
+        print("Oh, so you're one of those good" + name + "Come in!!")
+else:
+    print("Hello " + name + "  thankyou so much for coming in today!!\n\n\n")
+
+# COFFEE MENU:
+menu = "Coffeemate, Frappucino, Capuccino, Latte, Espresso, Kapeng Barako"
+
+print(name + ", what would you like from our menu today? Here is what we are serving.\n\n\n" + menu)
+
+print("What is your order?\n")
+
+order = input()
+
+#PRICE OF EACH COFFEE:
+if order == "Kapeng Barako":
+    price = 200
+elif order == "Coffeemate":
+    price = 300
+elif order == "Frappucino":
+    price = 99
+elif order == "Capuccino":
+    price = 300
+elif order == "Latte":
+    price = 500
+elif order == "Espresso":
+    price = 400
+else:
+    print("Sorry" + " " + name + " " + "we don't have  that here.")
+
+quantity = input("How many coffees would you like?\n")
+
+#GETTING TOTAL AMOUNT:
+
+total = price * int(quantity)
+print("Thankyou. Your total is: PHP " + str(total))
+
+print("Sounds good " + name + ", we'll have your " + quantity + " " + order + " ready for you in a moment <3\n")
+
+# a minute later...
+print(name + ", Your order is ready!! \n\n\n")
+
+print("Thankyou for coming!, " + name)
